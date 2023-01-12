@@ -73,17 +73,17 @@ async function handleEvent(event) {
   }
 
   // create a echoing text message
-  const completion = await openai.createCompletion({
-    model: "text-davinci-003",
-    prompt: event.message.text ,
-    max_tokens: 1000,
-  });
+  // const completion = await openai.createCompletion({
+  //   model: "text-davinci-003",
+  //   prompt: event.message.text ,
+  //   max_tokens: 1000,
+  // });
 
   // create a echoing text message
-  const echo = { type: 'text', text: completion.data.choices[0].text.trim() };
+  // const echo = { type: 'text', text: completion.data.choices[0].text.trim() };
 
   // use reply API
-  return client.replyMessage(event.replyToken, echo);
+  // return client.replyMessage(event.replyToken, echo);
 }
 
 // listen on port
