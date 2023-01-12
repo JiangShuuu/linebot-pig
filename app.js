@@ -64,7 +64,7 @@ async function handleEvent(event) {
     return client.replyMessage(event.replyToken, 
         {
             type: 'location',
-            title: '出沒地',
+            title: '龍昇出沒地',
             address: "251新北市淡水區沙崙路333號",
             latitude: 25.1878538,
             longitude: 121.4276130
